@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException, Depends, BackgroundTasks, UploadFile
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
-import models
+from app.models.all_models import *
 from app.db.session import get_db
 from app.core.security import verify_webhook_secret
 import httpx, secrets, json, logging, os, tempfile, shutil
