@@ -162,6 +162,7 @@ STT endpoint: Temporarily stubbed in FastAPI
 No migrations: Manual DB schema management
 🔄 Roadmap (Next Steps)
 [✅] Dockerize: Create Dockerfile & docker-compose.yml
+[✅] SENTRY INSTALLER v23.1 - Отслеживание ошибок в коде
 [ ] Alembic: Database migration management
 [ ] Pydantic schemas: Data validation schemas
 [ ] Unit tests: pytest coverage
