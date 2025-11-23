@@ -161,7 +161,7 @@ Models: Split into separate files causes SQLAlchemy circular imports — WORKARO
 STT endpoint: Temporarily stubbed in FastAPI
 No migrations: Manual DB schema management
 🔄 Roadmap (Next Steps)
-[ ] Dockerize: Create Dockerfile & docker-compose.yml
+[✅] Dockerize: Create Dockerfile & docker-compose.yml
 [ ] Alembic: Database migration management
 [ ] Pydantic schemas: Data validation schemas
 [ ] Unit tests: pytest coverage
