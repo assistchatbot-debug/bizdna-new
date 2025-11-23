@@ -1,0 +1,10 @@
+.git
+.gitignore
+*.log
+logs/
+venv/
+.gitkeep
+.env.example
+docker-compose.yml
+Dockerfile.*
+dockerize.sh

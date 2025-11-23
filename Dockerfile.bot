@@ -1,0 +1,10 @@
+FROM python:3.10-slim
+WORKDIR /app
+COPY requirements.txt requirements-bot.txt ./
+RUN pip install --no-cache-dir -r requirements-bot.txt
+COPY bots/ ./bots/
+COPY common/ ./common/
+COPY app/ ./app/
+COPY .env ./
+ENV PYTHONPATH=/app
+CMD ["python", "bots/sales_bot/bot.py"]
