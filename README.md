@@ -65,6 +65,61 @@ Copy
 ├── .env.example                  # Template for .env
 ├── requirements*.txt             # Python dependencies
 └── README.md                     # This file
+
+НОВАЯ СТРУКТУРА БЕЗ ОПИСАНИЯ ФАЙЛОВ
+bizdna-new/
+├── .env   ← ты сказал, что он есть и заполнен
+├── docker-compose.yml
+├── Dockerfile.api
+├── Dockerfile.bot
+├── dockerize.sh
+├── setup.sh
+├── status.sh
+├── monitor.sh
+├── backup.sh
+├── requirements*.txt
+├── alembic/
+│   └── env.py
+├── app/
+│   ├── main.py
+│   ├── __init__.py
+│   ├── api/
+│   │   ├── __init__.py
+│   │   └── v1/
+│   │       └── __init__.py 
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── config.py
+│   │   └── security.py
+│   ├── db/
+│   │   ├── __init__.py
+│   │   ├── session.py
+│   │   └── migrations/
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── all_models.py
+│   │   ├── all_models_backup.py
+│   │   └── *.py (много моделей)
+│   ├── schemas/
+│   └── services/
+│       ├── __init__.py
+│       ├── company_cache.py
+│       └── translation_service.py
+├── bots/
+│   ├── __init__.py
+│   └── sales_bot/
+│       ├── __init__.py
+│       └── bot.py
+├── common/
+│   ├── __init__.py
+│   ├── api_retry.py
+│   └── rate_limiter.py
+├── deployments/
+├── logs/
+├── scripts/
+└── tests/
+
+
 🛠️ Tech Stack
 Table
 Copy
